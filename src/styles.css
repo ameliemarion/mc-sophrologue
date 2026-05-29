@@ -1,0 +1,129 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-cream: var(--cream);
+  --color-sky: var(--sky);
+  --color-coral: var(--coral);
+  --color-teal: var(--teal);
+  --font-display: "Dancing Script", cursive;
+  --font-serif: "Cardo", serif;
+}
+
+:root {
+  --radius: 1rem;
+
+  /* Brand palette — mer & galets */
+  --teal: #2a6d8a;          /* bleu lagon profond */
+  --sky: #bcdfe9;           /* bleu écume doux */
+  --coral: #e5604e;         /* corail (accent logo) */
+  --cream: #f6f1e7;         /* sable clair */
+
+  --background: #f6f1e7;
+  --foreground: #1f3a47;
+
+  --card: #ffffff;
+  --card-foreground: #1f3a47;
+  --popover: #ffffff;
+  --popover-foreground: #1f3a47;
+
+  --primary: #2a6d8a;
+  --primary-foreground: #f6f1e7;
+
+  --secondary: #e8edf0;
+  --secondary-foreground: #1f3a47;
+
+  --muted: #ece4d4;
+  --muted-foreground: #6b7f88;
+
+  --accent: #e5604e;
+  --accent-foreground: #f6f1e7;
+
+  --destructive: #b3413a;
+  --destructive-foreground: #f6f1e7;
+
+  --border: #ddd2c0;
+  --input: #ddd2c0;
+  --ring: #2a6d8a;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-serif);
+    font-weight: 400;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--teal);
+    line-height: 1.15;
+    letter-spacing: 0.005em;
+  }
+
+  .eyebrow {
+    font-family: var(--font-serif);
+    font-size: 0.75rem;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--coral);
+    font-weight: 700;
+  }
+}
+
+/* Decorative leaf divider */
+.leaf-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--sky);
+}
+.leaf-divider::before,
+.leaf-divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  max-width: 80px;
+  background: linear-gradient(to right, transparent, var(--sky), transparent);
+}
