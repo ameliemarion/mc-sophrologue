@@ -14,7 +14,7 @@ export const Route = createFileRoute("/temoignages")({
 
 const items = [
   {
-    name: "Agnès C.",
+    name: "Agnès C",
     when: "Décembre 2025",
     text: "Personne très sérieuse et à l'écoute du patient. Je me sentais en permanence oppressée et Madame Coste m'a fait travailler ma respiration sur quelques séances. Aujourd'hui cette sensation a disparu. J'ai beaucoup aimé ces moments de bien-être dans son cabinet, très agréable et propice au lâcher-prise. Je recommande vivement cette professionnelle.",
   },
