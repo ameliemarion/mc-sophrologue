@@ -19,7 +19,7 @@ const items = [
     text: "Personne très sérieuse et à l'écoute du patient. Je me sentais en permanence oppressée et Madame Coste m'a fait travailler ma respiration sur quelques séances. Aujourd'hui cette sensation a disparu. J'ai beaucoup aimé ces moments de bien-être dans son cabinet, très agréable et propice au lâcher-prise. Je recommande vivement cette professionnelle.",
   },
   {
-    name: "Camille D.",
+    name: "Camille D",
     when: "Janvier 2026",
     text: "J'ai testé la sophrologie avec Madame Coste afin de préparer au mieux mon année 2026 et j'en suis ravie. Le cadre est calme, apaisant, propice au lâcher-prise. Madame Coste est douce, rassurante, très professionnelle. Cette séance m'a fait beaucoup de bien, notamment sur le sommeil. On sent une vraie présence, une écoute sincère et une grande maîtrise de sa pratique.",
   },
